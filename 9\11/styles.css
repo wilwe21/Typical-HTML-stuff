@@ -1,0 +1,42 @@
+body{
+  padding: 25px;
+  background: black;
+  color: white;
+}
+.tower {
+	max-width: 20vw;
+}
+.towers {
+	display: flex;
+	height: 50vh;
+	width: 20vw;
+}
+.plane > img {
+	width: 15vw;
+	height: 15vh;
+}
+.explode {
+	opacity: 0px;
+	margin-left: 15vw;
+	margin-top: -20vh;
+	animation: explode 10s forwards
+}
+.plane {
+	animation: fly 5s forwards;
+}
+@keyframes fly {
+	from {
+		transform: translateX(0px);
+	} to {
+		transform: translateX(500px);
+	}
+}
+@keyframes explode {
+	0% {
+		opacity: 0;
+	} 50% {
+		opacity: 0;
+	} 100% {
+		opacity: 1;	
+	}
+}
