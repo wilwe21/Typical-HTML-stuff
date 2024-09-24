@@ -1,0 +1,58 @@
+body{
+  padding: 25px;
+  background: black;
+  color: white;
+}
+.title {
+	color: #5C6AC4;
+  font-family: Comic Sans MS;
+}
+.titlediv {
+  display: flex;
+  justify-content: center;
+}
+img {
+  height: 15vh;
+  width: 15vw;
+  margin-top: 5px;
+}
+.obrazki {
+  display: flex;
+  justify-content: space-around;
+}
+.monalisa {
+  border: 2px solid #224459;
+  margin-left: 20px;
+  padding: 5px;
+}
+.leonardo {
+  border: 2px dashed #ffff00;
+  margin-left: 20px;
+  padding: 5px;
+}
+.divtabeli {
+  display: flex;
+  justify-content: center;
+}
+table {
+  width: 75vw;
+  border: 2px dotted orange;
+  background: url("https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp");
+  background-size: 20% 100%;
+}
+.lista {
+  margin-right: 20px;
+}
+ul, ol {
+  color: grey;
+}
+ul :nth-child(1), ol :nth-child(1){
+  color: orange;
+}
+ul :nth-child(3), ol :nth-child(3){
+  color: red;
+}
+ul :hover, ol :hover {
+  background: orange;
+  color: white;
+}
