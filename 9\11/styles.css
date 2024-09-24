@@ -8,7 +8,7 @@ body{
 }
 .towers {
 	display: flex;
-	height: 50vh;
+	height: 25vh;
 	width: 20vw;
 }
 .plane > img {
@@ -19,16 +19,44 @@ body{
 	opacity: 0px;
 	margin-left: 15vw;
 	margin-top: -20vh;
-	animation: explode 10s forwards
+	animation: explode 7s forwards
 }
 .plane {
 	animation: fly 5s forwards;
+}
+.plane2 > img {
+	width: 15vw;
+	height: 15vh;
+}
+.explode2 {
+	opacity: 0px;
+	margin-left: 30vw;
+	margin-top: -20vh;
+	animation: explode 15s forwards;
+}
+.plane2 {
+	animation: fly2 5s forwards;
+	animation-delay: 5s;
+}
+.omg {
+	position: fixed;
+	font-size: 5em;
+	top: 1vh;
+	left: 50vw;
+	animation: explode 15s forwards;
 }
 @keyframes fly {
 	from {
 		transform: translateX(0px);
 	} to {
 		transform: translateX(500px);
+	}
+}
+@keyframes fly2 {
+	from {
+		transform: translateX(0px);
+	} to {
+		transform: translateX(750px);
 	}
 }
 @keyframes explode {
