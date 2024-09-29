@@ -1,0 +1,20 @@
+body {
+  animation: chuj 1s linear infinite;
+}
+
+@keyframes chuj {
+  0% {
+    background: red;
+  }
+  33.33333% {
+    background: blue;
+  }
+  66.66666% {
+    background: green;
+  }
+  99.99999% {
+    background: red;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

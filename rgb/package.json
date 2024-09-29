@@ -1,0 +1,17 @@
+{
+  "name": "rgb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npx sass --watch scss/main.scss:css/style.css",
+		"server": "npx live-server",
+		"start": "kitty --detach npm run sass && npm run server"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.79.4"
+  }
+}
