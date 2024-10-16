@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+  </head>
+  <body>
+	 <video width="320" height="240" controls>
+  		<source src="wideo.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+	<audio controls>
+		<source src="audio.mp3" type="audio/mpeg">
+	</audio>
+	<canvas id="can"/>
+	<script>
+		const canvas = document.getElementById("can")
+		const ctx = canvas.getContext("2d")
+		ctx.fillStyle = "red"
+		ctx.fillRect(0, 0, 150, 75)
+		ctx.fillStyle = "yellow"
+		ctx.beginPath()
+		ctx.arc(95,50, 40, 0, 2* Math.PI)
+		ctx.fill()
+		ctx.strokeStyle = "blue"
+		ctx.beginPath()
+		ctx.moveTo(0,0)
+		ctx.lineTo(200,100)
+		ctx.stroke()
+	</script>
+  </body>
+</html>
